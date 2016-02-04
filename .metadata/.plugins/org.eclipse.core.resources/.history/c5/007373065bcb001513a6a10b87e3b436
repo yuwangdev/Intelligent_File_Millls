@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+/**
+ * @author ywang
+ *
+ */
+public interface AnalyzeFile {
+	
+	
+	
+	
+	
+
+}

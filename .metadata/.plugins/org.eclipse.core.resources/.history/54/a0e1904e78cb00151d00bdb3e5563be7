@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * @author ywang
+ *
+ */
+public class AnalyzeTest {
+	
+	String filePath = "resources/test1.txt";
+	Analyze an = new Analyze((new ReadRawFile(filePath)).convertFileToStringArray());
+	
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

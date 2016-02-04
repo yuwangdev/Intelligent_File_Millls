@@ -1,0 +1,31 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import rawtextstats.core.main.ReadRawFile;
+
+/**
+ * 
+ */
+
+/**
+ * @author ywang
+ *
+ */
+public class ReadRawFileTest {
+
+	@Test
+	public void test() {
+		System.out.println("Test ReadRawFile.class");
+		
+		String filePath = "resources/test.txt";
+		ReadRawFile rrf = new ReadRawFile(filePath);
+		rrf.convertFileToStringArray();
+		
+		
+		
+		
+		
+	}
+
+}

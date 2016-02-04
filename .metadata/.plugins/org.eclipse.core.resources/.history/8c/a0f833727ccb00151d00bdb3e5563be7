@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * @author ywang
+ *
+ */
+public class RawTextStatsTest {
+	
+	String filePath = "resources/test1.txt";
+	RawTextStats rts = new RawTextStats(filePath);
+	ResultPerFile rpf = rts.getResult();
+
+	@Test
+	public void test() {
+		System.out.println(rpf.getFullContent());
+		System.out.println(rpf.getSymbols());
+		System.out.println(rpf.getAverageWords());
+		System.out.println(rpf.getTotalLineNumber());
+		System.out.println(rpf.getTotalWords());
+		System.out.println(rpf.getWordNumberPerLine());
+		
+	}
+
+}

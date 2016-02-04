@@ -1,0 +1,35 @@
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+
+import rawtextstats.core.main.ReadRawFile;
+
+/**
+ * 
+ */
+
+/**
+ * @author ywang
+ *
+ */
+public class ReadRawFileTest {
+
+	@Test
+	public void convertFileToStringArrayShouldReturnArrayList1() {
+			
+		String filePath = "resources/test1.txt";
+		ReadRawFile rrf = new ReadRawFile(filePath);
+		ArrayList<String> result = null;
+		result=rrf.convertFileToStringArray();
+		assertNotNull(result);
+		
+		
+		
+		
+		
+		
+	}
+
+}

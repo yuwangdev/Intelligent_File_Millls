@@ -1,0 +1,62 @@
+package rawtextstats.core.main;
+import static org.junit.Assert.*;
+
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+
+import rawtextstats.core.main.ReadRawFile;
+
+/**
+ * 
+ */
+
+/**
+ * @author ywang
+ *
+ */
+public class ReadRawFileTest {
+
+	@Test
+	public void convertFileToStringArrayShouldReturnArrayList1() {
+
+		String filePath = "resources/test1.txt";
+		ReadRawFile rrf = new ReadRawFile(filePath);
+		ArrayList<String> result = null;
+		result = rrf.convertFileToStringArray();
+		assertNotNull(result);
+		assertEquals(15, result.size());
+
+	}
+
+	@Test
+	public void convertFileToStringArrayShouldReturnArrayList2() {
+
+		String filePath = "resources/test2.txt";
+		ReadRawFile rrf = new ReadRawFile(filePath);
+		ArrayList<String> result = null;
+		result = rrf.convertFileToStringArray();
+		assertNotNull(result);
+		assertEquals(43, result.size());
+
+	}
+
+	@Rule
+	public ExpectedException expectedEx = ExpectedException.none();
+
+	@Test
+	public void convertFileToStringArrayShouldReturnArrayList3() {
+
+		String filePath = "resources/test_null.txt";
+		ReadRawFile rrf = new ReadRawFile(filePath);
+		rrf.convertFileToStringArray();
+
+		expectedEx.expect(FileNotFoundException.class);
+		expectedEx.expectMessage("Unable to open file 'resources/test_null.txt'");
+
+	}
+
+}

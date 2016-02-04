@@ -1,0 +1,127 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import java.util.ArrayList;
+
+/**
+ * @author ywang
+ *
+ */
+public class ResultPerFile {
+
+	public ResultPerFile() {
+		super();
+	}
+
+	private ArrayList<String> fullContent;
+	private int totalLineNumber;
+	private ArrayList<Integer> wordNumberPerLine;
+	private int totalEnglishCharacter;
+	private int totalWords;
+	private int totalBlankSpace;
+	private int totalCommas;
+	private int totalExclamatory;
+	private int totalPeriod;
+	private int totalQuestion;
+	private int totalColon;
+	private int totalSemiColon;
+
+	public void setFullContent(ArrayList<String> fullContent) {
+		this.fullContent = fullContent;
+	}
+
+	public void setTotalLineNumber(int totalLineNumber) {
+		this.totalLineNumber = totalLineNumber;
+	}
+
+	public void setWordNumberPerLine(ArrayList<Integer> wordNumberPerLine) {
+		this.wordNumberPerLine = wordNumberPerLine;
+	}
+
+	public void setTotalEnglishCharacter(int totalEnglishCharacter) {
+		this.totalEnglishCharacter = totalEnglishCharacter;
+	}
+
+	public void setTotalWords(int totalWords) {
+		this.totalWords = totalWords;
+	}
+
+	public void setTotalBlankSpace(int totalBlankSpace) {
+		this.totalBlankSpace = totalBlankSpace;
+	}
+
+	public void setTotalCommas(int totalCommas) {
+		this.totalCommas = totalCommas;
+	}
+
+	public void setTotalExclamatory(int totalExclamatory) {
+		this.totalExclamatory = totalExclamatory;
+	}
+
+	public void setTotalPeriod(int totalPeriod) {
+		this.totalPeriod = totalPeriod;
+	}
+
+	public void setTotalQuestion(int totalQuestion) {
+		this.totalQuestion = totalQuestion;
+	}
+
+	public void setTotalColon(int totalColon) {
+		this.totalColon = totalColon;
+	}
+
+	public void setTotalSemiColon(int totalSemiColon) {
+		this.totalSemiColon = totalSemiColon;
+	}
+
+	public ArrayList<String> getFullContent() {
+		return fullContent;
+	}
+
+	public int getTotalLineNumber() {
+		return totalLineNumber;
+	}
+
+	public ArrayList<Integer> getWordNumberPerLine() {
+		return wordNumberPerLine;
+	}
+
+	public int getTotalEnglishCharacter() {
+		return totalEnglishCharacter;
+	}
+
+	public int getTotalWords() {
+		return totalWords;
+	}
+
+	public int getTotalBlankSpace() {
+		return totalBlankSpace;
+	}
+
+	public int getTotalCommas() {
+		return totalCommas;
+	}
+
+	public int getTotalExclamatory() {
+		return totalExclamatory;
+	}
+
+	public int getTotalPeriod() {
+		return totalPeriod;
+	}
+
+	public int getTotalQuestion() {
+		return totalQuestion;
+	}
+
+	public int getTotalColon() {
+		return totalColon;
+	}
+
+	public int getTotalSemiColon() {
+		return totalSemiColon;
+	}
+
+}

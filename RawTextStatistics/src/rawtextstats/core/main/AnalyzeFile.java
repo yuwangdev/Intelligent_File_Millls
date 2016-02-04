@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+/**
+ * @author ywang
+ *
+ */
+public interface AnalyzeFile {
+	public ArrayList<String> calFullContent();
+
+	public int calTotalLineNumber();
+
+	public ArrayList<Integer> calWordNumberPerLine();
+
+	public HashMap<String, Integer> calSymbol();
+
+	public int calTotalWords();
+
+	public int calAverageWords();
+
+}

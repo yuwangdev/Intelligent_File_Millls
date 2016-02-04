@@ -1,0 +1,35 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import java.util.ArrayList;
+
+/**
+ * @author ywang
+ *
+ */
+public interface AnalyzeFile {
+	private ArrayList<String> fullContent;
+	public int calTotalLineNumber();
+	private ArrayList<Integer> wordNumberPerLine;
+	private int totalEnglishCharacter;
+	private int totalWords;
+	private int totalBlankSpace;
+	private int totalCommas;
+	private int totalExclamatory;
+	private int totalPeriod;
+	private int totalQuestion;
+	private int totalColon;
+	private int totalSemiColon;
+	
+	
+	
+
+	
+	
+	
+	
+	
+
+}

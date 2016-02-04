@@ -1,0 +1,26 @@
+package rawtextstats.core.main;
+
+public class RawTextStats {
+	
+	String filePath;
+
+	public RawTextStats(String filePath) {
+		super();
+		this.filePath = filePath;
+	}
+	
+	
+	public ResultPerFile getResult(){
+		ResultPerFile rpf;
+		
+		return rpf;
+	}
+
+	
+	
+	
+	
+	
+	
+	
+}

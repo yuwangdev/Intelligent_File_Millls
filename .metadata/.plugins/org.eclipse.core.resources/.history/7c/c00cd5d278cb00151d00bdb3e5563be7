@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+
+/**
+ * @author ywang
+ *
+ */
+public class AnalyzeTest {
+	
+	String filePath = "resources/test1.txt";
+	Analyze an = new Analyze((new ReadRawFile(filePath)).convertFileToStringArray());
+	
+
+	@Test
+	public void fullContentShouldNotBeNull() {
+		ArrayList<String> temp = null;
+		temp=an.calFullContent();
+		
+		assertNotNull(temp);
+		
+	}
+	
+	@Test
+	public void fullContentShouldShowUp() {
+		System.out.println(an.);
+	}
+	
+	
+
+}

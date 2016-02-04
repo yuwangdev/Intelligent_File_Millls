@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * @author ywang
+ *
+ */
+public class RawTextStatsTest {
+	
+	String filePath = "resources/test1.txt";
+	RawTextStats rts = new RawTextStats(filePath);
+	
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

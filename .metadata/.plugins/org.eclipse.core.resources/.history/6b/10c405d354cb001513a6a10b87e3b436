@@ -1,0 +1,53 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+/**
+ * @author ywang
+ *
+ */
+public class ReadRawFile {
+
+	private String filePath;
+
+	public String getFilePath() {
+		return filePath;
+	}
+
+	public void setFilePath(String filePath) {
+		this.filePath = filePath;
+	}
+
+	public ReadRawFile(String filePath) {
+		super();
+		this.filePath = filePath;
+	}
+
+	public void convertFileToStringArray() {
+		String path = this.filePath;
+		String line = null;
+
+		try {
+			// FileReader reads text files in the default encoding.
+			FileReader fileReader = new FileReader(fileName);
+
+			// Always wrap FileReader in BufferedReader.
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+			while ((line = bufferedReader.readLine()) != null) {
+				System.out.println(line);
+			}
+
+			// Always close files.
+			bufferedReader.close();
+		} catch (FileNotFoundException ex) {
+			System.out.println("Unable to open file '" + fileName + "'");
+		} catch (IOException ex) {
+			System.out.println("Error reading file '" + fileName + "'");
+			// Or we could just do this:
+			// ex.printStackTrace();
+		}
+	}
+
+}

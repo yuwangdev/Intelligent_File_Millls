@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+package rawtextstats.core.main;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+/**
+ * @author ywang
+ *
+ */
+public class ResultPerFile {
+
+	private ArrayList<String> fullContent;
+	private int totalLineNumber;
+	private ArrayList<Integer> wordNumberPerLine;
+	private int averageWords;
+	private HashMap<String, Integer> symbols;
+
+	
+
+}
